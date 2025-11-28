@@ -20,14 +20,24 @@
     body {
         @apply font-montserrat bg-dark text-white;
     }
+    p {
+        @apply font-medium text-[18px] leading-8 -tracking-[0.2px];
+    }
 }
 
 @layer components {
-    .yellow-btn {
+    .linear_btn {
         @apply bg-linear-to-r from-[#F0B71F] to-[#E03609] font-semibold text-[17px] rounded-lg px-5 py-3;
     }
-    .bottom-line {
+    .bottom_line {
         @apply after:absolute after:bottom-0 after:left-0 after:bg-linear-to-r after:from-[#F0B71F] after:to-[#E03609] after:h-px after:w-full;
+    }
+    .linear_text {
+        background: linear-gradient(270deg, #F0B71F 0%, #E03609 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
     }
 }
 
