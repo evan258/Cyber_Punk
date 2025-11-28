@@ -1,1 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import "tailwindcss";
+
+@theme {
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+    --breakpoint-2xl: 1520px;
+
+    --color-dark: #010101;
+
+    --font-montserrat: "Montserrat", sans-serif;
+    --font-orbitron: "Orbitron", sans-serif;
+}
+
+@layer base {
+    body {
+        @apply font-montserrat bg-dark text-white;
+    }
+}
+
+@layer components {
+    .yellow-btn {
+        @apply bg-linear-to-r from-[#F0B71F] to-[#E03609] font-semibold text-[17px] rounded-lg px-5 py-3;
+    }
+    .bottom-line {
+        @apply after:absolute after:bottom-0 after:left-0 after:bg-linear-to-r after:from-[#F0B71F] after:to-[#E03609] after:h-px after:w-full;
+    }
+}
+
+@layer utilities {
+    .container {
+        @apply mx-auto px-[50px];
+    }
+}
