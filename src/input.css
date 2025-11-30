@@ -30,7 +30,13 @@
         @apply bg-linear-to-r from-[#F0B71F] to-[#E03609] font-semibold text-[17px] rounded-lg px-5 py-3;
     }
     .bottom_line {
-        @apply after:absolute after:bottom-0 after:left-0 after:bg-linear-to-r after:from-[#F0B71F] after:to-[#E03609] after:h-px after:w-full;
+        @apply after:absolute after:bottom-0 after:left-0 after:bg-linear-to-r after:from-[#F0B71F] after:to-[#E03609] after:h-0.5 after:w-full;
+    }
+    .left_line {
+        @apply before:absolute before:top-0 before:left-0 before:bg-linear-to-b before:from-[#F0B71F] before:to-[#E03609] before:h-full before:w-0.5;
+    }
+    .right_line {
+        @apply after:absolute after:bottom-0 after:right-0 after:bg-linear-to-t after:from-[#F0B71F] after:to-[#E03609] after:h-full after:w-0.5;
     }
     .linear_text {
         background: linear-gradient(270deg, #F0B71F 0%, #E03609 100%);

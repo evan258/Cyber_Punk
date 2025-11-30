@@ -6,7 +6,9 @@
         <title>Document</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body class="relative">
+        <div class="container absolute h-full left-1/2 top-0 -translate-x-1/2 left_line right_line"></div>
+
         <nav class="py-[52px] relative bottom_line">
             <div class="container">
                 <div class="flex justify-between items-center">
@@ -14,10 +16,10 @@
                         <img src="images/logo.svg" alt="logo">
                     </div>
                     <ul class="flex justify-center gap-12">
-                        <li>Home</li>
-                        <li>Pages</li>
-                        <li>Support</li>
-                        <li>Contact</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                     <div class="button">
                         <button class="linear_btn">
@@ -28,8 +30,14 @@
             </div>
         </nav>
 
-        <section class="pt-[25px] pb-[134px] relative bottom_line">
-            <div class="container">
+        <section class="relative bottom_line">
+            <div class="container pt-[25px] pb-[134px] relative">
+                <span class="absolute top-0 left-0 -translate-1/2">
+                    <img src="images/Union-1.png" alt="color">
+                </span>
+                <span class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2">
+                    <img src="images/Union-2.png" alt="color">
+                </span>
                 <h1 class="text-center font-orbitron font-bold text-[197px]">Cyber Punk</h1>
 
                 <div class="flex justify-center relative">
@@ -88,8 +96,14 @@
             </div>
         </section>
 
-        <section class="pt-[70px] pb-[130px] relative bottom_line">
-            <div class="container">
+        <section class="relative bottom_line">
+            <div class="container pt-[70px] pb-[130px] relative">
+                <span class="absolute top-0 left-0 -translate-1/2">
+                    <img src="images/Union-2.png" alt="color">
+                </span>
+                <span class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2">
+                    <img src="images/Union-1.png" alt="color">
+                </span>
                 <div class="grid grid-cols-2 gap-9 items-center">
                     <div>
                         <h1 class="font-orbitron font-bold text-[57px]">Where <span class="linear_text">Neon Dreams & Digital</span> Converge.</h1>
@@ -137,8 +151,15 @@
         </section>
 
         <section class="relative bottom_line">
-            <div class="container pt-[170px] pb-[110px]" style="background: url('images/bg.png') no-repeat center/cover; padding-left: 100px; padding-right: 100px;">
-                <div class="grid grid-cols-[7fr_4fr] gap-[163px]">
+            <div class="container relative pt-[170px] pb-[110px]">
+                <span class="absolute top-0 left-0 -translate-1/2">
+                    <img src="images/Union-2.png" alt="color">
+                </span>
+                <span class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2">
+                    <img src="images/Union-1.png" alt="color">
+                </span>
+                <div class="absolute inset-0 -z-1" style="background: url('images/bg.png') no-repeat center/cover;"></div>
+                <div class="grid grid-cols-[7fr_4fr] gap-[163px] px-[50px]">
                     <div class="pb-[60px]">
                         <h1 class="font-orbitron font-bold text-[69px]">Greetings! Dive into the Cybernetic Universe</h1>
                         <p class="mt-[81px]">Our website is your gateway to a universe of neon lights, gritty streets, and cybernetic enhancements. Explore the high-tech, low-life world where the lines between humanity and machinery blur.</p>
@@ -178,8 +199,14 @@
             </div>
         </section>
 
-        <section class="py-[150px] relative bottom_line">
-            <div class="container">
+        <section class="relative bottom_line">
+            <div class="container py-[150px] relative">
+                <span class="absolute top-0 left-0 -translate-1/2">
+                    <img src="images/Union-2.png" alt="color">
+                </span>
+                <span class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2">
+                    <img src="images/Union-1.png" alt="color">
+                </span>
                 <div class="text-center">
                     <h1 class="text-[56px] font-bold font-orbitron">Dive into the Cybernetic <span class="block linear_text">Universe</span></h1>
                     <p class="max-w-[936px] pt-[37px] mx-auto">A realm where advanced technology meets dystopian reality. Our website is your gateway to a universe of neon lights, gritty streets, and cybernetic enhancements. </p>
@@ -216,8 +243,14 @@
             </div>
         </section>
 
-        <section class="pt-[94px] pb-[149px]">
-            <div class="container">
+        <section>
+            <div class="container pt-[94px] pb-[149px] relative">
+                <span class="absolute top-0 left-0 -translate-1/2">
+                    <img src="images/Union-1.png" alt="color">
+                </span>
+                <span class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2">
+                    <img src="images/Union-2.png" alt="color">
+                </span>
                 <div class="grid grid-cols-2 items-center gap-[115px]">
                     <div>
                         <img src="images/portal.png" alt="human">
@@ -235,7 +268,7 @@
         </section>
 
         <section class="relative bottom_line">
-            <div class="container">
+            <div class="container relative">
                 <h1 class="text-center font-orbitron text-[57px] font-bold">Frequently Asked <span class="linear_text block">Questions</span></h1>
                 <p class="text-center pt-[37px]  max-w-[936px] mx-auto">
                     A realm where advanced technology meets dystopian reality. Our website is your gateway to a universe of neon lights, gritty streets, and cybernetic enhancements. 
@@ -275,7 +308,13 @@
         </section>
 
         <footer>
-            <div class="container">
+            <div class="container relative">
+                <span class="absolute top-0 left-0 -translate-1/2">
+                    <img src="images/Union-1.png" alt="color">
+                </span>
+                <span class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2">
+                    <img src="images/Union-2.png" alt="color">
+                </span>
                 <div class="flex justify-between gap-6 pt-[90px]">
                     <div>
                         <h3 class="text-[22px] font-semibold">Cyber.AI - Cyber Punk Website</h3>
@@ -309,9 +348,9 @@
                 <div class="pt-[105px] pb-[60px] flex justify-between">
                     <p>&copy; Cyber.AI - Cyber Punk 2024. All rights reserved.</p>
                     <ul class="flex gap-[52px]">
-                        <li>Terms</li>
-                        <li>Privacy</li>
-                        <li>Cookies</li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Cookies</a></li></a>
                     </ul>
                     <ul class="flex gap-[22px]">
                         <li><a href="#" class="flex justify-center items-center p-4 border border-white rounded-full"><img src="images/in.png" alt="linkedin"></a></li>
