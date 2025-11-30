@@ -39,6 +39,9 @@
         background-clip: text;
         text-fill-color: transparent;
     }
+    .outline_btn {
+        @apply bg-transparent border border-[#E03609] text-[#E03609] rounded-lg px-5 py-3 hover:bg-[#E03609] hover:text-white;
+    }
 }
 
 @layer utilities {
