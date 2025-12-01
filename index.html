@@ -1,102 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cyber_punk</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body class="relative">
-        <div class="container absolute h-full left-1/2 top-0 -translate-x-1/2 left_line right_line"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber_punk</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="relative">
+    <div
+      class="hidden xl:block container absolute h-full left-1/2 top-0 -translate-x-1/2 left_line right_line"
+    ></div>
 
-        <nav class="py-[52px] relative bottom_line">
-            <div class="container">
-                <div class="flex justify-between items-center">
-                    <div class="logo">
-                        <img src="images/logo.svg" alt="logo">
-                    </div>
-                    <ul class="flex justify-center gap-12">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                    <div class="button">
-                        <button class="linear_btn">
-                            Get started free
-                        </button>
-                    </div>
-                </div>
+    <nav class="py-6 lg:py-[52px] relative bottom_line">
+      <div class="container">
+        <div class="flex justify-between items-center">
+          <div class="logo">
+            <img src="images/logo.svg" alt="logo" />
+          </div>
+          <ul class="hidden md:flex justify-center gap-6 lg:gap-12">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div>
+            <button class="hidden md:block linear_btn">Get started free</button>
+          </div>
+          <div class="md:hidden">
+            <button class="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="relative bottom_line">
+      <div class="container py-6 lg:pt-[25px] lg:pb-[134px] relative">
+        <span
+          class="hidden md:inline-block absolute top-0 left-0 -translate-1/2"
+        >
+          <img src="images/Union-1.png" alt="color" />
+        </span>
+        <span
+          class="hidden md:inline-block absolute top-0 right-0 -translate-y-1/2 translate-x-1/2"
+        >
+          <img src="images/Union-2.png" alt="color" />
+        </span>
+        <h1
+          class="text-center font-orbitron font-bold text-[60px] lg:text-[100px] xl:text-[140px] 2xl:text-[197px]"
+        >
+          Cyber Punk
+        </h1>
+
+        <div class="flex justify-center relative">
+          <div
+            class="max-w-[862px] lg:-mt-[110px] xl:-mt-[150px] 2xl:-mt-[190px]"
+          >
+            <img src="images/hero.png" alt="hero" />
+          </div>
+
+          <div
+            class="flex gap-5 absolute top- 0 left-0 md:top-[27%] md:left-[55px]"
+          >
+            <div class="max-w-[264px]">
+              <ul class="list-disc pb-[18px]">
+                <li>
+                  <h2 class="font-semibold text-[24px]">Stories & Lore</h2>
+                </li>
+              </ul>
+              <p class="ml-2">
+                Dive into compelling narratives set in a dystopian future.
+              </p>
             </div>
-        </nav>
-
-        <section class="relative bottom_line">
-            <div class="container pt-[25px] pb-[134px] relative">
-                <span class="absolute top-0 left-0 -translate-1/2">
-                    <img src="images/Union-1.png" alt="color">
-                </span>
-                <span class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2">
-                    <img src="images/Union-2.png" alt="color">
-                </span>
-                <h1 class="text-center font-orbitron font-bold text-[197px]">Cyber Punk</h1>
-
-                <div class="flex justify-center relative">
-                    <div class="max-w-[862px] -mt-[190px]">
-                        <img src="images/hero.png" alt="hero">
-                    </div>
-
-                    <div class="flex absolute top-[27%] left-[55px]">
-                        <div class="max-w-[264px]">
-                            <ul class="list-disc pb-[18px]">
-                                <li>
-                                    <h1 class="font-semibold text-[24px]">Stories & Lore</h1>
-                                </li>
-                            </ul>
-                            <p class="ml-2">Dive into compelling narratives set in a dystopian future.</p>
-                        </div>
-                        <div class="mt-4 absolute -right-[150px]">
-                            <img src="images/shape.png" alt="shape">
-                        </div>
-                    </div>
-
-                    <div class="max-w-[344px] text-right absolute top-[20%] right-[25px]">
-                        <h1 class="text-[36px] font-normal uppercase">Events and <span class="font-semibold">Updates</span></h1>
-                        <p class="pt-11 pb-[58px]">Explore the high-tech, low-life world where the lines between humanity and machinery blur.</p>
-                        <button class="linear_btn">Read More</button>
-                    </div>
-                </div>
-
-                <div class="flex gap-[100px]">
-                    <div class="max-w-[655px] gap-11 border border-[#E03609] rounded-[20px]
-                    bg-[rgba(255,255,255,0.04)] backdrop-blur-[25px] -mt-[65px] grid grid-cols-[200px_1fr] py-8 px-[34px]">
-                        <div class="overflow-hidden rounded-2xl">
-                            <img src="images/hero-2.png" alt="hero-2">
-                        </div>
-                        <div>
-                            <strong class="linear_text text-[57px] font-semibold">76,285K+</strong>
-                            <h1 class="font-medium text-[28px] py-[22px]">Experience the Future</h1>
-                            <p>Explore the high-tech, low-life world where the lines between</p>
-                        </div>
-                    </div>
-                    <div class="max-w-[270px] mt-[25px]">
-                        <h1 class="text-[36px] font-normal uppercase mb-11">Art and <span class="font-semibold">Design</span></h1>
-                        <p>Feast your eyes on stunning visuals and concept art that bring the cyberpunk</p>
-                    </div>
-                    <div>
-                        <div class="border border-[#E03609] rounded-[20px]
-                        bg-[rgba(255,255,255,0.04)] backdrop-blur-[25px]">
-                        
-                            <div class="px-[34px] pt-7 pb-[50px]">
-                                <strong class="linear_text text-[57px] font-semibold">17+</strong>
-                                <h1 class="font-medium text-[28px]">Years of Experiences</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="hidden lg:block mt-4 absolute -right-[150px]">
+              <img src="images/shape.png" alt="shape" />
             </div>
-        </section>
+          </div>
 
-        <section class="relative bottom_line">
+          <div
+            class="max-w-[344px] text-right absolute right-0 top-[25%] md:top-[20%] md:right-[25px]"
+          >
+            <h2 class="text-[36px] font-normal uppercase">
+              Events and <span class="font-semibold">Updates</span>
+            </h2>
+            <p class="py-6 lg:pt-11 lg:pb-[58px]">
+              Explore the high-tech, low-life world where the lines between
+              humanity and machinery blur.
+            </p>
+            <button class="linear_btn">Read More</button>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row flex-wrap xl:flex-nowrap gap-[30px] lg:gap-[100px] justify-center">
+          <div
+            class="max-w-[655px] gap-11 border border-[#E03609] rounded-[20px] bg-[rgba(255,255,255,0.04)] backdrop-blur-[25px] -mt-[65px] grid grid-cols-[200px_1fr] sm:py-8 sm:px-[34px]"
+          >
+            <div class="overflow-hidden rounded-2xl">
+              <img src="images/hero-2.png" alt="hero-2" />
+            </div>
+            <div>
+              <strong
+                class="linear_text text-[30px] lg:text-[57px] font-semibold"
+                >76,285K+</strong
+              >
+              <h1 class="font-medium text-[28px] py-[22px]">
+                Experience the Future
+              </h1>
+              <p>
+                Explore the high-tech, low-life world where the lines between
+              </p>
+            </div>
+          </div>
+          <div class="max-w-[270px] mt-[25px]">
+            <h1 class="text-[36px] font-normal uppercase mb-11">
+              Art and <span class="font-semibold">Design</span>
+            </h1>
+            <p>
+              Feast your eyes on stunning visuals and concept art that bring the
+              cyberpunk
+            </p>
+          </div>
+          <div>
+            <div
+              class="border border-[#E03609] rounded-[20px] bg-[rgba(255,255,255,0.04)] backdrop-blur-[25px]"
+            >
+              <div class="px-[34px] pt-7 pb-[50px]">
+                <strong class="linear_text text-[30px] lg:text-[57px] font-semibold"
+                  >17+</strong
+                >
+                <h1 class="font-medium text-[28px]">Years of Experiences</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative bottom_line">
             <div class="container pt-[70px] pb-[130px] relative">
                 <span class="absolute top-0 left-0 -translate-1/2">
                     <img src="images/Union-2.png" alt="color">
@@ -104,21 +158,21 @@
                 <span class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2">
                     <img src="images/Union-1.png" alt="color">
                 </span>
-                <div class="grid grid-cols-2 gap-9 items-center">
-                    <div>
-                        <h1 class="font-orbitron font-bold text-[57px]">Where <span class="linear_text">Neon Dreams & Digital</span> Converge.</h1>
-                        <p class="py-[69px]">A realm where advanced technology meets dystopian reality. Our website is your gateway to a universe of neon lights, gritty streets, and cybernetic enhancements. Explore the high-tech, low-life world where the lines between humanity and machinery blur.</p>
+                <div class="grid xl:grid-cols-2 gap-9 items-center justify-center">
+                    <div class="max-w-[600px]">
+                        <h1 class="font-orbitron font-bold text-[30px] xl:text-[40px] 2xl:text-[57px]">Where <span class="linear_text">Neon Dreams & Digital</span> Converge.</h1>
+                        <p class="py-8 2xl:py-[69px]">A realm where advanced technology meets dystopian reality. Our website is your gateway to a universe of neon lights, gritty streets, and cybernetic enhancements. Explore the high-tech, low-life world where the lines between humanity and machinery blur.</p>
                         <div class="flex gap-[70px]">
                             <div>
-                                <h1 class="linear_text font-semibold text-[47px]">89,2K+</h1>
+                                <h1 class="linear_text font-semibold text-[30px] lg:text-[47px]">89,2K+</h1>
                                 <p class="pt-2">Discover the Future</p>
                             </div>
                             <div>
-                                <h1 class="linear_text font-semibold text-[47px]">7001+</h1>
+                                <h1 class="linear_text font-semibold text-[30px] lg:text-[47px]">7001+</h1>
                                 <p class="pt-2">Stories and Lore</p>
                             </div>
                             <div>
-                                <h1 class="linear_text font-semibold text-[47px]">3,124+</h1>
+                                <h1 class="linear_text font-semibold text-[30px] lg:text-[47px]">3,124+</h1>
                                 <p class="pt-2">Art and Design</p>
                             </div>
                         </div>
@@ -127,16 +181,16 @@
                         <img src="images/neon-1.png" alt="neon-1">
                     </div>
                 </div>
-                <div class="mt-[43px] grid grid-cols-2 gap-9 items-center">
-                    <div>
+                <div class="mt-[43px] grid xl:grid-cols-2 gap-9 items-center justify-center">
+                    <div class="order-2 xl:order-1">
                         <img src="images/neon-2.png" alt="neon-2">
                     </div>
-                    <div>
-                        <h1 class="font-orbitron font-bold text-[57px]">Unveil <span class="linear_text">the Secrets of the</span> Cybernetic Underworld.</h1>
-                        <p class="py-[69px]">A realm where advanced technology meets dystopian reality. Our website is your gateway to a universe of neon lights, gritty streets, and cybernetic enhancements.</p>
+                    <div class="order-1 xl:order-2 max-w-[600px]">
+                        <h1 class="font-orbitron font-bold text-[30px] xl:text-[40px] 2xl:text-[57px]">Unveil <span class="linear_text">the Secrets of the</span> Cybernetic Underworld.</h1>
+                        <p class="py-8 2xl:py-[69px]">A realm where advanced technology meets dystopian reality. Our website is your gateway to a universe of neon lights, gritty streets, and cybernetic enhancements.</p>
 
                         <div class="gap-[51px] border border-[#F0B71F] rounded-[20px]
-                        bg-[rgba(255,255,255,0.04)] backdrop-blur-[25px] grid grid-cols-[200px_1fr] py-8 px-[34px]">
+                        bg-[rgba(255,255,255,0.04)] backdrop-blur-[25px] grid md:grid-cols-[200px_1fr] p-5 lg:py-8 lg:px-[34px]">
                             <div class="overflow-hidden rounded-2xl">
                                 <img src="images/neon-3.png" alt="neon-3">
                             </div>
@@ -150,7 +204,7 @@
             </div>
         </section>
 
-        <section class="relative bottom_line">
+    <section class="relative bottom_line">
             <div class="container relative pt-[170px] pb-[110px]">
                 <span class="absolute top-0 left-0 -translate-1/2">
                     <img src="images/Union-2.png" alt="color">
@@ -159,37 +213,37 @@
                     <img src="images/Union-1.png" alt="color">
                 </span>
                 <div class="absolute inset-0 -z-1" style="background: url('images/bg.png') no-repeat center/cover;"></div>
-                <div class="grid grid-cols-[7fr_4fr] gap-[163px] px-[50px]">
+                <div class="grid lg:grid-cols-[7fr_4fr] gap-10 px-[35px] xl:gap-[163px] xl:px-[50px]">
                     <div class="pb-[60px]">
-                        <h1 class="font-orbitron font-bold text-[69px]">Greetings! Dive into the Cybernetic Universe</h1>
-                        <p class="mt-[81px]">Our website is your gateway to a universe of neon lights, gritty streets, and cybernetic enhancements. Explore the high-tech, low-life world where the lines between humanity and machinery blur.</p>
+                        <h1 class="font-orbitron font-bold text-3xl lg:text-[45px] xl:text-[69px]">Greetings! Dive into the Cybernetic Universe</h1>
+                        <p class="mt-[30px] md:mt-[50px] lg:mt-[81px]">Our website is your gateway to a universe of neon lights, gritty streets, and cybernetic enhancements. Explore the high-tech, low-life world where the lines between humanity and machinery blur.</p>
                     </div>
                     <div class="mt-[30px] grid gap-y-9 border border-[#F0B71F] rounded-[20px]
-                        bg-[rgba(255,255,255,0.04)] backdrop-blur-[25px] py-[58px] px-[63px]">
-                        <div class="flex gap-5 justify-between">
+                        bg-[rgba(255,255,255,0.04)] backdrop-blur-[25px] p-10 xl:py-[58px] xl:px-[63px]">
+                        <div class="grid grid-cols-[16px_1fr_auto] gap-5">
                             <div class="mt-[5px] size-4 bg-amber-400"></div>
-                            <h1 class="max-w-40 text-[24px] font-semibold leading-7">Join the Revolution</h1>
+                            <h1 class="max-w-40 text-[18px] xl:text-[24px] font-semibold leading-7">Join the Revolution</h1>
                             <a href="#" class="-mt-2">
                                 <img src="images/arrow.png" alt="arrow">
                             </a>
                         </div>
-                        <div class="flex gap-5 justify-between">
+                        <div class="grid grid-cols-[16px_1fr_auto] gap-5">
                             <div class="mt-[5px] size-4 bg-red-700"></div>
-                            <h1 class="max-w-40 text-[24px] font-semibold leading-7">Art and Design</h1>
+                            <h1 class="max-w-40 text-[18px] xl:text-[24px] font-semibold leading-7">Art and Design</h1>
                             <a href="#" class="-mt-2">
                                 <img src="images/arrow.png" alt="arrow">
                             </a>
                         </div>
-                        <div class="flex gap-5 justify-between">
+                        <div class="grid grid-cols-[16px_1fr_auto] gap-5">
                             <div class="mt-[5px] size-4 bg-amber-400"></div>
-                            <h1 class="max-w-40 text-[24px] font-semibold leading-7">Tech and Gear</h1>
+                            <h1 class="max-w-40 text-[18px] xl:text-[24px] font-semibold leading-7">Tech and Gear</h1>
                             <a href="#" class="-mt-2">
                                 <img src="images/arrow.png" alt="arrow">
                             </a>
                         </div>
-                        <div class="flex gap-5 justify-between">
+                        <div class="grid grid-cols-[16px_1fr_auto] gap-5">
                             <div class="mt-[5px] size-4 bg-red-700"></div>
-                            <h1 class="max-w-40 text-[24px] font-semibold leading-7">Stories and Lore</h1>
+                            <h1 class="max-w-40 text-[18px] xl:text-[24px] font-semibold leading-7">Stories and Lore</h1>
                             <a href="#" class="-mt-2">
                                 <img src="images/arrow.png" alt="arrow">
                             </a>
@@ -199,7 +253,7 @@
             </div>
         </section>
 
-        <section class="relative bottom_line">
+    <section class="relative bottom_line">
             <div class="container py-[150px] relative">
                 <span class="absolute top-0 left-0 -translate-1/2">
                     <img src="images/Union-2.png" alt="color">
@@ -243,7 +297,7 @@
             </div>
         </section>
 
-        <section>
+    <!-- <section>
             <div class="container pt-[94px] pb-[149px] relative">
                 <span class="absolute top-0 left-0 -translate-1/2">
                     <img src="images/Union-1.png" alt="color">
@@ -265,9 +319,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section class="relative bottom_line">
+    <!-- <section class="relative bottom_line">
             <div class="container relative">
                 <h1 class="text-center font-orbitron text-[57px] font-bold">Frequently Asked <span class="linear_text block">Questions</span></h1>
                 <p class="text-center pt-[37px]  max-w-[936px] mx-auto">
@@ -305,9 +359,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <footer>
+    <!-- <footer>
             <div class="container relative">
                 <span class="absolute top-0 left-0 -translate-1/2">
                     <img src="images/Union-1.png" alt="color">
@@ -359,6 +413,6 @@
                     </ul>
                 </div>
             </div>
-        </footer>
-    </body>
+        </footer> -->
+  </body>
 </html>

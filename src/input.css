@@ -1,57 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import "tailwindcss";
 
 @theme {
-    --breakpoint-sm: 640px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 1024px;
-    --breakpoint-xl: 1280px;
-    --breakpoint-2xl: 1520px;
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 95rem;
 
-    --color-dark: #010101;
+  --color-dark: #010101;
 
-    --font-montserrat: "Montserrat", sans-serif;
-    --font-orbitron: "Orbitron", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-orbitron: "Orbitron", sans-serif;
 }
 
 @layer base {
-    body {
-        @apply font-montserrat bg-dark text-white;
-    }
-    p {
-        @apply font-medium text-[18px] leading-8 -tracking-[0.2px];
-    }
+  body {
+    @apply font-montserrat bg-dark text-white;
+  }
+  p {
+    @apply font-medium text-[18px] leading-8 -tracking-[0.2px];
+  }
 }
 
 @layer components {
-    .linear_btn {
-        @apply bg-linear-to-r from-[#F0B71F] to-[#E03609] font-semibold text-[17px] rounded-lg px-5 py-3;
-    }
-    .bottom_line {
-        @apply after:absolute after:bottom-0 after:left-0 after:bg-linear-to-r after:from-[#F0B71F] after:to-[#E03609] after:h-0.5 after:w-full;
-    }
-    .left_line {
-        @apply before:absolute before:top-0 before:left-0 before:bg-linear-to-b before:from-[#F0B71F] before:to-[#E03609] before:h-full before:w-0.5;
-    }
-    .right_line {
-        @apply after:absolute after:bottom-0 after:right-0 after:bg-linear-to-t after:from-[#F0B71F] after:to-[#E03609] after:h-full after:w-0.5;
-    }
-    .linear_text {
-        background: linear-gradient(270deg, #F0B71F 0%, #E03609 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;
-    }
-    .outline_btn {
-        @apply bg-transparent border border-[#E03609] text-[#E03609] rounded-lg px-5 py-3 hover:bg-[#E03609] hover:text-white;
-    }
+  .linear_btn {
+    @apply bg-linear-to-r from-[#F0B71F] to-[#E03609] font-semibold text-[17px] rounded-lg px-5 py-3;
+  }
+  .bottom_line {
+    @apply after:absolute after:bottom-0 after:left-0 after:bg-linear-to-r after:from-[#F0B71F] after:to-[#E03609] after:h-0.5 after:w-full;
+  }
+  .left_line {
+    @apply before:absolute before:top-0 before:left-0 before:bg-linear-to-b before:from-[#F0B71F] before:to-[#E03609] before:h-full before:w-0.5;
+  }
+  .right_line {
+    @apply after:absolute after:bottom-0 after:right-0 after:bg-linear-to-t after:from-[#F0B71F] after:to-[#E03609] after:h-full after:w-0.5;
+  }
+  .linear_text {
+    background: linear-gradient(270deg, #f0b71f 0%, #e03609 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .outline_btn {
+    @apply bg-transparent border border-[#E03609] text-[#E03609] rounded-lg px-5 py-3 hover:bg-[#E03609] hover:text-white;
+  }
 }
 
 @layer utilities {
-    .container {
-        @apply mx-auto px-[50px];
+  .container {
+    @apply mx-auto px-[50px];
+  }
+}
+
+@media (max-width: 639px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 1023px) {
+    .linear_btn {
+        @apply py-3 px-3 text-[14px] font-normal;
     }
+    h2,h3,h4 {
+        @apply text-[18px] font-normal;
+    }
+    p {
+        @apply text-[12px] font-medium;
+    }
+}
+
+@media (max-width: 1279px) {
+
 }
