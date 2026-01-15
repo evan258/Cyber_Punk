@@ -56,28 +56,37 @@
   }
 }
 
-@media (max-width: 639px) {
-
-}
-
-@media (max-width: 767px) {
-
+@media (max-width: 1279px) {
+  a {
+    @apply text-[14px] font-normal;
+  }
+  .linear_btn {
+    @apply py-3 px-3 text-[14px] font-normal;
+  }
+  .outline_btn {
+    @apply py-3 px-3 text-[14px] font-normal;
+  }
 }
 
 @media (max-width: 1023px) {
-    h2,h3,h4 {
-        @apply text-[18px] font-normal;
-    }
-    p {
-        @apply text-[12px] font-medium;
-    }
+  h2,
+  h3,
+  h4 {
+    @apply text-[18px] font-normal;
+  }
+  p {
+    @apply text-[12px] font-medium;
+  }
+  a {
+    @apply text-[10px] font-normal;
+  }
+  .linear_btn {
+    @apply py-2 px-2 text-[12px] font-normal;
+  }
 }
 
-@media (max-width: 1279px) {
-    .linear_btn {
-        @apply py-3 px-3 text-[14px] font-normal;
-    }
-    .outline_btn {
-        @apply py-3 px-3 text-[14px] font-normal;
-    }
+@media (max-width: 767px) {
+}
+
+@media (max-width: 639px) {
 }

@@ -13,21 +13,21 @@
 
     <nav class="py-6 lg:py-[52px] relative bottom_line">
       <div class="container">
-        <div class="flex justify-between items-center">
-          <div class="logo">
-            <img src="images/logo.svg" alt="logo" />
-          </div>
-          <ul class="hidden md:flex justify-center gap-6 lg:gap-12">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-          <div>
-            <button class="hidden md:block linear_btn">Get started free</button>
+        <div class="flex justify-between">
+          <div id="nav-container" class="flex justify-between items-center w-full gap-2">
+            <div class="logo">
+              <img src="images/logo.svg" alt="logo" />
+            </div>
+            <ul id="nav-ul" class="hidden md:flex justify-center gap-6 lg:gap-12">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <button id="nav-btn" class="hidden md:block linear_btn">Get started free</button>
           </div>
           <div class="md:hidden">
-            <button class="">
+            <button id="toggler" class="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -414,5 +414,7 @@
           </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
